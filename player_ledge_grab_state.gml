@@ -1,4 +1,6 @@
 ///player_ledge_grab_state()
+// what to do once the player has snapped to
+// the edge of a platform
 
 //ledge grab sprite
 sprite_index = spr_pboy_ledge_grab;
