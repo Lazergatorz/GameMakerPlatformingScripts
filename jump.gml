@@ -1,4 +1,6 @@
 ///jump(condition)
+// create different attributes for jumping such as normal jumps
+// wall jumps and other special jumps
 
 //condition: normal jump, wall jump, etc...
 cond = argument[0];
