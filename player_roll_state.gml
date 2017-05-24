@@ -1,4 +1,6 @@
 ///player_roll_state()
+// after the player is running and then dives forward,
+// they enter a rolling state
 
 sprite_index = spr_pboy_roll;
 image_speed = 0.3;
