@@ -1,7 +1,15 @@
 ///player_move_state()
+// general player movement state. this is the default state
+// that the player is in until switched
 
 //change player mask
 mask_index = asset_get_index(string(character) + "_idle");
+
+// asset_get_index(string(character) + "xxx");
+// this line of code gets the character's name and looks for the sprite image
+// with the same name. This makes for easier sprite management and less hard 
+// coding of each character that the player might transform into throughout the process
+// of the game. this can, and should, be applied to all other segments of code as well.
 
 //set spd
 var spd = walk_spd;
@@ -152,14 +160,6 @@ if (hspd != 0)
 //apply collision checking
 move(obj_solid);
 
-//check for ledge grab state
+// check for other states
 ledge_grab_check();
-
-//check for wall slide.. still need to decide if i want this in the game
-//wall_slide_check();
-
-//check for climbing a ladder
-climb_ladder_check();
-
-//check for transformation
-transformation_check();
+wall_slide_check();
