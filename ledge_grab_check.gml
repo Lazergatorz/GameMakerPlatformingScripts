@@ -1,4 +1,6 @@
 ///ledge_grab_check()
+// check for platform edge while falling to determine if we
+// should snap to the edge
 
 //check that we are falling
 var falling = y > yprevious;
