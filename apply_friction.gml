@@ -1,4 +1,7 @@
 ///apply_friction(amount)
+// gradually slow player when they are not inputing a movement
+// input and are on the ground until they come to a stop
+
 var amount = argument[0];
 
 //check to make sure that we are moving
